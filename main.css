@@ -1,0 +1,23 @@
+body { background: #777; }
+
+h1 {
+    font: 600 24px 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+span {
+    transition: all .5s ease;
+    font-weight: 900;
+    color: #efedce;
+    display: inline-block;
+    letter-spacing: 1.6px;
+    padding: 3px 0 4px 0;
+    font-size: 96px;
+    text-shadow: 3px 3px 0 #9cb8b3;
+}
