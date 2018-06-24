@@ -20,8 +20,8 @@ function loop(){
       currentLetter++
       document.getElementById("text").innerHTML = "<span style='color:#c4c2a9;text-shadow: .04em .04em 0 #809793;'>"+ word.substring(0,currentLetter) +"</span>" + "<span>"+word.substring(currentLetter,word.length)+"</span>"
     }
+    document.getElementById("acc").innerHTML = "Accuracy: " + Math.round(100*word.length/total,0) + "%"
     if (currentLetter == word.length){
-      document.getElementById("acc").innerHTML = "Accuracy: " + Math.round(100*word.length/total,0) + "%"
       window.requestAnimationFrame(loop)
     }
   }
