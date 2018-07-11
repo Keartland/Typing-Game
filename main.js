@@ -4,7 +4,7 @@ function getRandomWord(words){
 
 words = fetch("https://raw.githubusercontent.com/dwyl/english-words/master/words.txt").then(data => data.text().then(function(d){
   words = d.split("\n")
-  return words ? words : "Cant get words"
+  return words ? words : "Failed to load words"
 }));
 
 words.then(() => window.requestAnimationFrame(loop))
